@@ -75,18 +75,18 @@ int main() {
     printf("SEMESTER I\n");
     for(int i = 0; i < 8; i++) 
         printf("%-10s %-15s %-5d %-5s %.1f\n", sem1[i].code, sem1[i].name, sem1[i].units, sem1[i].grade, sem1[i].gp);
-    printf(">> SEMESTER I GPA: %.2f\n\n", s1_total_gp / s1_units);
+    printf(">> Semester I GPA: %.2f\n\n", s1_total_gp / s1_units);
 
     printf("SEMESTER II\n");
     for(int i = 0; i < 8; i++) 
         printf("%-10s %-15s %-5d %-5s %.1f\n", sem2[i].code, sem2[i].name, sem2[i].units, sem2[i].grade, sem2[i].gp);
-    printf(">> SEMESTER II GPA: %.2f\n", s2_total_gp / s2_units);
+    printf(">> Semester II GPA: %.2f\n", s2_total_gp / s2_units);
 
     // Final Summary
     float cgpa = (s1_total_gp + s2_total_gp) / (s1_units + s2_units);
     printf("==================================================\n");
     printf("FINAL CGPA: %.2f\n", cgpa);
-    printf("CLASSIFICATION: %s\n", getClassification(cgpa));
+    printf("Classification: %s\n", getClassification(cgpa));
     printf("==================================================\n");
 
 
